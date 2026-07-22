@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if [ $# -ne 2 ]; then
-    echo "Error: Se requieren 2 argumentos: <ruta-archivo> <string>"
+    echo "Error: Two arguments required: <writefile> <writestr>"
     exit 1
 fi
 
@@ -11,6 +11,6 @@ writestr="$2"
 mkdir -p "$(dirname "$writefile")"
 
 if ! echo "$writestr" > "$writefile"; then
-    echo "Error: No se pudo crear el archivo '$writefile'"
+    echo "Error: Could not create file '$writefile'"
     exit 1
 fi

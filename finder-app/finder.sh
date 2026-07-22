@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if [ $# -ne 2 ]; then
-    echo "Error: Se requieren 2 argumentos: <directorio> <string>"
+    echo "Error: Two arguments required: <filesdir> <searchstr>"
     exit 1
 fi
 
@@ -9,7 +9,7 @@ filesdir="$1"
 searchstr="$2"
 
 if [ ! -d "$filesdir" ]; then
-    echo "Error: '$filesdir' no es un directorio valido"
+    echo "Error: '$filesdir' is not a valid directory"
     exit 1
 fi
 
