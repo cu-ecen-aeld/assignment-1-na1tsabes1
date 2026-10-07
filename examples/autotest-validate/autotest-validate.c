@@ -21,7 +21,11 @@ bool this_function_returns_false()
     return false;
 }
 
-const char *my_username(void)
+/**
+ * @return a string which contains the username you use for
+ * git submissions.  This string should match the string in conf/username.txt
+ */
+const char *my_username()
 {
-    return "na1tsabes1";
+    return "YOUR_GITHUB_USERNAME";
 }
